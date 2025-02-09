@@ -1,0 +1,50 @@
+# Assignment 6: Medians and Order Statistics & Elementary Data Structures
+
+## Part 1: Selection Algorithms Implementation and Analysis
+
+### 1. Implementation
+The following selection algorithms were implemented:
+- **Randomized Quickselect**: An expected linear time algorithm for finding the k-th smallest element in an unsorted array.
+- **Deterministic Selection (Median of Medians)**: A worst-case linear time selection algorithm that guarantees O(n) complexity.
+
+### 2. Performance Analysis
+- **Randomized Quickselect**
+  - Best/Average Time Complexity: O(n)
+  - Worst-case Time Complexity: O(n^2) (occurs when bad pivots are consistently chosen)
+  - Space Complexity: O(1)
+- **Deterministic Median of Medians**
+  - Worst-case Time Complexity: O(n)
+  - Space Complexity: O(1)
+
+### 3. Empirical Analysis
+Experiments were conducted on datasets of varying distributions:
+- **Random input**: Quickselect performed efficiently.
+- **Sorted input**: Median of Medians was more stable in performance.
+- **Reverse sorted input**: Quickselect showed more variability.
+
+## Part 2: Elementary Data Structures Implementation and Discussion
+
+### 1. Implemented Data Structures
+- **Stack** (LIFO operations implemented using arrays)
+- **Queue** (FIFO operations implemented using arrays)
+- **Linked List** (Singly linked list with insertion and deletion operations)
+
+### 2. Performance Analysis
+- **Stack Operations**: 
+  - Push: O(1), Pop: O(1)
+- **Queue Operations**:
+  - Enqueue: O(1), Dequeue: O(1) (using list)
+- **Linked List Operations**:
+  - Insert: O(1), Delete: O(n)
+
+### 3. Discussion on Practical Applications
+- **Stacks** are used in function calls, expression evaluation, and undo features in applications.
+- **Queues** are useful in scheduling, networking, and buffer management.
+- **Linked Lists** provide efficient insertions and deletions in dynamic memory scenarios.
+
+## Submission Information
+- Source code and the report are available in the GitHub repository.
+- A README file provides setup instructions.
+
+---
+**Prepared for Assignment 6**
